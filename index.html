@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Khadus 💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  text-align: center;
+  color: #633b70;
+  background: linear-gradient(135deg, #ffe4f0, #eee0ff, #fff0f7);
+}
+
+section {
+  min-height: 100vh;
+  padding: 50px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: clamp(45px, 12vw, 75px);
+  color: #c34e91;
+  text-shadow: 2px 3px white;
+  animation: float 2s infinite ease-in-out;
+}
+
+h2 {
+  color: #a14f9c;
+}
+
+p {
+  max-width: 520px;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 24px;
+  margin: 15px;
+  background: #c45b9d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card {
+  max-width: 550px;
+  width: 100%;
+  background: #ffffffb8;
+  border: 2px dashed #d88bbd;
+  border-radius: 25px;
+  padding: 24px;
+  margin: 15px auto;
+  box-shadow: 0 8px 25px #d8b5df55;
+}
+
+.heart {
+  font-size: 30px;
+  animation: beat 1s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+.photo-box {
+  border: 2px dashed #c45b9d;
+  border-radius: 18px;
+  padding: 25px 10px;
+  margin: 12px 0;
+  background: #fff5fb;
+}
+
+footer {
+  padding: 25px;
+}
+
+@keyframes float {
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes beat {
+  50% { transform: scale(1.2); }
+}
+</style>
+</head>
+
+<body>
+
+<section id="home">
+
+  <div class="heart">💗 ✨ 💗</div>
+
+  <h1>Khadus</h1>
+
+  <h2>Hey Khadus — Yes, YOU! 🎀</h2>
+
+  <p>1 Year 3 Months ♥ Countless Memories</p>
+
+  <p>
+    A little corner of the internet,
+    made especially for you. 🌷
+  </p>
+
+  <button onclick="openSurprise()">
+    Open Your Surprise 💌
+  </button>
+
+  <p>Made with love & a little bit of pagalpan 💗</p>
+
+</section>
+
+<section id="surprise" class="hidden">
+
+  <h1 style="font-size:45px">For You 💕</h1>
+
+  <div class="card">
+    <h2>🌸 Our Little Chapter 🌸</h2>
+
+    <p>
+      1 year and 3 months of hostel life,
+      random talks, silly moments, laughter,
+      and memories I'll always treasure.
+    </p>
+
+    <p>
+      Some ordinary days became the memories
+      I never want to forget. 🧿
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>📸 Memory Corner</h2>
+
+    <div class="photo-box">
+      <div class="heart">📷 💗</div>
+      <p>Our favourite photos belong here!</p>
+      <small>We'll add your photos next.</small>
+    </div>
+
+    <p>
+      Little moments. Big memories.
+      Stories worth keeping. 🌷
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>💌 A Little Letter</h2>
+
+    <p>Dear Khadus, 💗</p>
+
+    <p>
+      Your engineering journey has reached
+      a beautiful milestone, and a new chapter
+      is waiting for you.
+    </p>
+
+    <p>
+      I hope life brings you amazing opportunities,
+      supportive people, happiness, and the success
+      you've worked so hard for.
+    </p>
+
+    <p>
+      No matter how busy life gets,
+      I hope you always remember these little
+      hostel moments with a smile.
+    </p>
+
+    <p>
+      Keep growing, keep shining,
+      and never stop believing in yourself.
+      You deserve beautiful things. 🫶🏻
+    </p>
+
+    <p>
+      All the very best for your next chapter! ✨
+    </p>
+
+    <p>— Someone who treasures these memories 💗</p>
+  </div>
+
+  <button onclick="showFinal()">
+    One Last Thing... 💝
+  </button>
+
+  <div id="final" class="card hidden">
+
+    <div class="heart">💗 💗 💗</div>
+
+    <h2>Your Next Chapter Starts Now! ✨</h2>
+
+    <p>
+      A chapter may be ending,
+      but the memories will always remain
+      a beautiful part of the story.
+    </p>
+
+    <h2>GO MAKE THE WORLD PROUD! 🌷</h2>
+
+    <p>You've got this, Khadus! 💌</p>
+
+  </div>
+
+</section>
+
+<footer>
+  Made specially for Khadus 🌸
+</footer>
+
+<script>
+function openSurprise() {
+  document.getElementById("surprise").classList.remove("hidden");
+
+  document.getElementById("surprise").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+function showFinal() {
+  document.getElementById("final").classList.remove("hidden");
+
+  document.getElementById("final").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
